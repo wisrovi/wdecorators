@@ -1,3 +1,11 @@
 loguru
 tomli
 setuptools
+
+psycopg2
+fastapi
+pyjwt
+psutil
+uvicorn
+jinja2
+python-multipart

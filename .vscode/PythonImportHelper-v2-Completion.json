@@ -1,0 +1,1427 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "psutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psutil",
+        "description": "psutil",
+        "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "functools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "functools",
+        "description": "functools",
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "init_logger",
+        "importPath": "graylog_logger",
+        "description": "graylog_logger",
+        "isExtraImport": true,
+        "detail": "graylog_logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "graylog_logger",
+        "description": "graylog_logger",
+        "isExtraImport": true,
+        "detail": "graylog_logger",
+        "documentation": {}
+    },
+    {
+        "label": "log_exceptions",
+        "importPath": "graylog_logger",
+        "description": "graylog_logger",
+        "isExtraImport": true,
+        "detail": "graylog_logger",
+        "documentation": {}
+    },
+    {
+        "label": "init_logger",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "log_exceptions",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "log_execution_time",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "Periodic_task_sched",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "Periodic_task_sched",
+        "importPath": "wdecorators",
+        "description": "wdecorators",
+        "isExtraImport": true,
+        "detail": "wdecorators",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tracemalloc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tracemalloc",
+        "description": "tracemalloc",
+        "detail": "tracemalloc",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "html",
+        "description": "html",
+        "detail": "html",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "signal",
+        "description": "signal",
+        "detail": "signal",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPMiddleware",
+        "importPath": "starlette.middleware.base",
+        "description": "starlette.middleware.base",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.base",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseHandler",
+        "kind": 6,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "class DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:\n                import psycopg2\n                self.conn = psycopg2.connect(**db_config)\n                self.use_postgres = True",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "Periodic_task_sched",
+        "kind": 6,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "class Periodic_task_sched:\n    \"\"\"Clase para manejar tareas periódicas con decoradores, API opcional y panel de control.\"\"\"\n    _api_running = False  # Evitar múltiples inicios de la API\n    def __init__(self):\n        self.database = None\n        self.executors = {}\n        self.api_enabled = False\n        self.api_app = FastAPI()\n        # Montar archivos estáticos y plantillas HTML\n        self.api_app.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "SECRET_KEY = \"mysecretkey\"\nALGORITHM = \"HS256\"\nADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_TOKEN",
+        "kind": 5,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "ADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "DB_FILE",
+        "kind": 5,
+        "importPath": "build.lib.wdecorators.periodic_scheduller.controller",
+        "description": "build.lib.wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "DB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:\n                import psycopg2\n                self.conn = psycopg2.connect(**db_config)",
+        "detail": "build.lib.wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "examples.graylog.example_fastapi",
+        "description": "examples.graylog.example_fastapi",
+        "peekOfCode": "def read_root():\n    logger.bind(send_to_graylog=True).info(\"Petición GET a /\")\n    return {\"message\": \"Hola desde FastAPI con Graylog\"}\n@app.middleware(\"http\")\nasync def log_requests(request: Request, call_next):\n    logger.bind(send_to_graylog=True).info(f\"Request: {request.method} {request.url}\")\n    try:\n        response = await call_next(request)\n        logger.bind(send_to_graylog=True).info(\n            f\"Response status: {response.status_code}\"",
+        "detail": "examples.graylog.example_fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "examples.graylog.example_fastapi",
+        "description": "examples.graylog.example_fastapi",
+        "peekOfCode": "def index():\n    logger.bind(send_to_graylog=True).info(\"Welcome to FastAPI with Graylog\")\n    return {\"msg\": \"OK\"}\n@app.get(\"/fail\")\n@log_exceptions(send_to_graylog=True)\ndef fail():\n    return 1 / 0  # Will be logged to Graylog",
+        "detail": "examples.graylog.example_fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "fail",
+        "kind": 2,
+        "importPath": "examples.graylog.example_fastapi",
+        "description": "examples.graylog.example_fastapi",
+        "peekOfCode": "def fail():\n    return 1 / 0  # Will be logged to Graylog",
+        "detail": "examples.graylog.example_fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "examples.graylog.example_fastapi",
+        "description": "examples.graylog.example_fastapi",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\n@log_exceptions()\ndef read_root():\n    logger.bind(send_to_graylog=True).info(\"Petición GET a /\")\n    return {\"message\": \"Hola desde FastAPI con Graylog\"}\n@app.middleware(\"http\")\nasync def log_requests(request: Request, call_next):\n    logger.bind(send_to_graylog=True).info(f\"Request: {request.method} {request.url}\")\n    try:",
+        "detail": "examples.graylog.example_fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "demo",
+        "kind": 2,
+        "importPath": "examples.graylog.example_script",
+        "description": "examples.graylog.example_script",
+        "peekOfCode": "def demo():\n    logger.bind(send_to_graylog=True).info(\"Ejemplo desde script Python\")\n    # logger.bind(send_to_graylog=True).exception(f\"Exception in all\")\n    x = 1 / 0  # Provoca excepción\nif __name__ == \"__main__\":\n    demo()",
+        "detail": "examples.graylog.example_script",
+        "documentation": {}
+    },
+    {
+        "label": "task_critical",
+        "kind": 2,
+        "importPath": "examples.periodic_task.basic",
+        "description": "examples.periodic_task.basic",
+        "peekOfCode": "def task_critical():\n    print(\"Ejecutando tarea crítica...\")\n@controller.periodic_execution(interval=10, priority=\"media\")\ndef task_secondary():\n    print(\"Ejecutando tarea secundaria...\")\ntask_critical()\ntask_secondary()\n# Iniciar API si es necesario\ncontroller.start_api()",
+        "detail": "examples.periodic_task.basic",
+        "documentation": {}
+    },
+    {
+        "label": "task_secondary",
+        "kind": 2,
+        "importPath": "examples.periodic_task.basic",
+        "description": "examples.periodic_task.basic",
+        "peekOfCode": "def task_secondary():\n    print(\"Ejecutando tarea secundaria...\")\ntask_critical()\ntask_secondary()\n# Iniciar API si es necesario\ncontroller.start_api()",
+        "detail": "examples.periodic_task.basic",
+        "documentation": {}
+    },
+    {
+        "label": "controller",
+        "kind": 5,
+        "importPath": "examples.periodic_task.basic",
+        "description": "examples.periodic_task.basic",
+        "peekOfCode": "controller = Periodic_task_sched()\ncontroller.set_database(None)  # Usar SQLite por defecto\n@controller.periodic_execution(interval=5, priority=\"alta\", enable_api=True)\ndef task_critical():\n    print(\"Ejecutando tarea crítica...\")\n@controller.periodic_execution(interval=10, priority=\"media\")\ndef task_secondary():\n    print(\"Ejecutando tarea secundaria...\")\ntask_critical()\ntask_secondary()",
+        "detail": "examples.periodic_task.basic",
+        "documentation": {}
+    },
+    {
+        "label": "benchmark",
+        "kind": 2,
+        "importPath": "wdecorators.general.benchmark",
+        "description": "wdecorators.general.benchmark",
+        "peekOfCode": "def benchmark(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        elapsed = time.time() - start\n        print(f\"{func.__name__} tomó {elapsed:.6f} segundos\")\n        return result\n    return wrapper\n@benchmark",
+        "detail": "wdecorators.general.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "slow_task",
+        "kind": 2,
+        "importPath": "wdecorators.general.benchmark",
+        "description": "wdecorators.general.benchmark",
+        "peekOfCode": "def slow_task():\n    time.sleep(2)\n    return \"Completado\"\n@benchmark\ndef quick_task():\n    return \"Listo\"\nprint(slow_task())\nprint(quick_task())",
+        "detail": "wdecorators.general.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "quick_task",
+        "kind": 2,
+        "importPath": "wdecorators.general.benchmark",
+        "description": "wdecorators.general.benchmark",
+        "peekOfCode": "def quick_task():\n    return \"Listo\"\nprint(slow_task())\nprint(quick_task())",
+        "detail": "wdecorators.general.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "count_calls",
+        "kind": 2,
+        "importPath": "wdecorators.general.count_calls",
+        "description": "wdecorators.general.count_calls",
+        "peekOfCode": "def count_calls(func):\n    func.call_count = 0\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        func.call_count += 1\n        print(f\"{func.__name__} ha sido llamada {func.call_count} veces\")\n        return func(*args, **kwargs)\n    return wrapper\n@count_calls\ndef say_hello():",
+        "detail": "wdecorators.general.count_calls",
+        "documentation": {}
+    },
+    {
+        "label": "say_hello",
+        "kind": 2,
+        "importPath": "wdecorators.general.count_calls",
+        "description": "wdecorators.general.count_calls",
+        "peekOfCode": "def say_hello():\n    return \"Hola!\"\n@count_calls\ndef add(a, b):\n    return a + b\nprint(say_hello())\nprint(say_hello())\nprint(add(1, 2))\nprint(add(3, 4))",
+        "detail": "wdecorators.general.count_calls",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "wdecorators.general.count_calls",
+        "description": "wdecorators.general.count_calls",
+        "peekOfCode": "def add(a, b):\n    return a + b\nprint(say_hello())\nprint(say_hello())\nprint(add(1, 2))\nprint(add(3, 4))",
+        "detail": "wdecorators.general.count_calls",
+        "documentation": {}
+    },
+    {
+        "label": "debug_arguments",
+        "kind": 2,
+        "importPath": "wdecorators.general.debug_arguments",
+        "description": "wdecorators.general.debug_arguments",
+        "peekOfCode": "def debug_arguments(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Llamado a {func.__name__} con args={args}, kwargs={kwargs}\")\n        return func(*args, **kwargs)\n    return wrapper\n@debug_arguments\ndef add(a, b):\n    return a + b\n@debug_arguments",
+        "detail": "wdecorators.general.debug_arguments",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "wdecorators.general.debug_arguments",
+        "description": "wdecorators.general.debug_arguments",
+        "peekOfCode": "def add(a, b):\n    return a + b\n@debug_arguments\ndef greet(name=\"Mundo\"):\n    return f\"Hola, {name}!\"\nprint(add(5, 10))\nprint(greet(name=\"Carlos\"))",
+        "detail": "wdecorators.general.debug_arguments",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "wdecorators.general.debug_arguments",
+        "description": "wdecorators.general.debug_arguments",
+        "peekOfCode": "def greet(name=\"Mundo\"):\n    return f\"Hola, {name}!\"\nprint(add(5, 10))\nprint(greet(name=\"Carlos\"))",
+        "detail": "wdecorators.general.debug_arguments",
+        "documentation": {}
+    },
+    {
+        "label": "disk_cache",
+        "kind": 2,
+        "importPath": "wdecorators.general.disk_cache",
+        "description": "wdecorators.general.disk_cache",
+        "peekOfCode": "def disk_cache(filename=\"cache.pkl\"):\n    def decorator(func):\n        cache = {}\n        if os.path.exists(filename):\n            with open(filename, \"rb\") as f:\n                cache = pickle.load(f)\n        @functools.wraps(func)\n        def wrapper(*args):\n            if args in cache:\n                return cache[args]",
+        "detail": "wdecorators.general.disk_cache",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "wdecorators.general.disk_cache",
+        "description": "wdecorators.general.disk_cache",
+        "peekOfCode": "def square(n):\n    return n * n\nprint(square(5))\nprint(square(5))  # Esto lo leerá del archivo",
+        "detail": "wdecorators.general.disk_cache",
+        "documentation": {}
+    },
+    {
+        "label": "log_exceptions",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_exceptions",
+        "description": "wdecorators.general.log_exceptions",
+        "peekOfCode": "def log_exceptions(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        try:\n            return func(*args, **kwargs)\n        except Exception as e:\n            print(f\"Error en {func.__name__}: {e}\")\n            return None\n    return wrapper\n@log_exceptions",
+        "detail": "wdecorators.general.log_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_exceptions",
+        "description": "wdecorators.general.log_exceptions",
+        "peekOfCode": "def divide(a, b):\n    return a / b\n@log_exceptions\ndef fail():\n    raise ValueError(\"¡Algo salió mal!\")\nprint(divide(10, 2))\nprint(divide(10, 0))\nprint(fail())",
+        "detail": "wdecorators.general.log_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "fail",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_exceptions",
+        "description": "wdecorators.general.log_exceptions",
+        "peekOfCode": "def fail():\n    raise ValueError(\"¡Algo salió mal!\")\nprint(divide(10, 2))\nprint(divide(10, 0))\nprint(fail())",
+        "detail": "wdecorators.general.log_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "log_return",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_return",
+        "description": "wdecorators.general.log_return",
+        "peekOfCode": "def log_return(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        print(f\"{func.__name__} retornó {result}\")\n        return result\n    return wrapper\n@log_return\ndef square(n):\n    return n * n",
+        "detail": "wdecorators.general.log_return",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_return",
+        "description": "wdecorators.general.log_return",
+        "peekOfCode": "def square(n):\n    return n * n\n@log_return\ndef hello():\n    return \"Hola mundo\"\nprint(square(4))\nprint(hello())",
+        "detail": "wdecorators.general.log_return",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "wdecorators.general.log_return",
+        "description": "wdecorators.general.log_return",
+        "peekOfCode": "def hello():\n    return \"Hola mundo\"\nprint(square(4))\nprint(hello())",
+        "detail": "wdecorators.general.log_return",
+        "documentation": {}
+    },
+    {
+        "label": "memoize",
+        "kind": 2,
+        "importPath": "wdecorators.general.memoize",
+        "description": "wdecorators.general.memoize",
+        "peekOfCode": "def memoize(func):\n    cache = {}\n    @functools.wraps(func)\n    def wrapper(*args):\n        if args in cache:\n            return cache[args]\n        result = func(*args)\n        cache[args] = result\n        return result\n    return wrapper",
+        "detail": "wdecorators.general.memoize",
+        "documentation": {}
+    },
+    {
+        "label": "slow_square",
+        "kind": 2,
+        "importPath": "wdecorators.general.memoize",
+        "description": "wdecorators.general.memoize",
+        "peekOfCode": "def slow_square(n):\n    import time\n    time.sleep(5)\n    return n * n\nprint(slow_square(4))  # Primera vez, lento\nprint(slow_square(4))  # Segunda vez, instantáneo",
+        "detail": "wdecorators.general.memoize",
+        "documentation": {}
+    },
+    {
+        "label": "periodic_execution",
+        "kind": 2,
+        "importPath": "wdecorators.general.periodic_execution",
+        "description": "wdecorators.general.periodic_execution",
+        "peekOfCode": "def periodic_execution(interval):\n    \"\"\"\n    Ejecuta la función de forma periódica cada 'interval' segundos.\n    \"\"\"\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            def run():\n                while True:\n                    func(*args, **kwargs)",
+        "detail": "wdecorators.general.periodic_execution",
+        "documentation": {}
+    },
+    {
+        "label": "say_hello",
+        "kind": 2,
+        "importPath": "wdecorators.general.periodic_execution",
+        "description": "wdecorators.general.periodic_execution",
+        "peekOfCode": "def say_hello():\n    print(\"Hola, esto se ejecuta cada 5 segundos\")\nsay_hello()",
+        "detail": "wdecorators.general.periodic_execution",
+        "documentation": {}
+    },
+    {
+        "label": "profile_memory",
+        "kind": 2,
+        "importPath": "wdecorators.general.profile_memory",
+        "description": "wdecorators.general.profile_memory",
+        "peekOfCode": "def profile_memory(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        tracemalloc.start()\n        result = func(*args, **kwargs)\n        current, peak = tracemalloc.get_traced_memory()\n        tracemalloc.stop()\n        print(f\"Memoria usada: actual={current}, pico={peak}\")\n        return result\n    return wrapper",
+        "detail": "wdecorators.general.profile_memory",
+        "documentation": {}
+    },
+    {
+        "label": "create_list",
+        "kind": 2,
+        "importPath": "wdecorators.general.profile_memory",
+        "description": "wdecorators.general.profile_memory",
+        "peekOfCode": "def create_list():\n    return [i for i in range(100000)]\n@profile_memory\ndef small_list():\n    return [1, 2, 3]\nprint(create_list())\nprint(small_list())",
+        "detail": "wdecorators.general.profile_memory",
+        "documentation": {}
+    },
+    {
+        "label": "small_list",
+        "kind": 2,
+        "importPath": "wdecorators.general.profile_memory",
+        "description": "wdecorators.general.profile_memory",
+        "peekOfCode": "def small_list():\n    return [1, 2, 3]\nprint(create_list())\nprint(small_list())",
+        "detail": "wdecorators.general.profile_memory",
+        "documentation": {}
+    },
+    {
+        "label": "rate_limit",
+        "kind": 2,
+        "importPath": "wdecorators.general.rate_limit",
+        "description": "wdecorators.general.rate_limit",
+        "peekOfCode": "def rate_limit(calls_per_second):\n    interval = 1.0 / calls_per_second\n    last_call = [0]\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            elapsed = time.time() - last_call[0]\n            if elapsed < interval:\n                time.sleep(interval - elapsed)\n            last_call[0] = time.time()",
+        "detail": "wdecorators.general.rate_limit",
+        "documentation": {}
+    },
+    {
+        "label": "say_hello",
+        "kind": 2,
+        "importPath": "wdecorators.general.rate_limit",
+        "description": "wdecorators.general.rate_limit",
+        "peekOfCode": "def say_hello():\n    print(\"Hola!\")\nsay_hello()\nsay_hello()\nsay_hello()\nsay_hello()\nsay_hello()\nsay_hello()\nsay_hello()\nsay_hello()",
+        "detail": "wdecorators.general.rate_limit",
+        "documentation": {}
+    },
+    {
+        "label": "require_authentication",
+        "kind": 2,
+        "importPath": "wdecorators.general.require_authentication",
+        "description": "wdecorators.general.require_authentication",
+        "peekOfCode": "def require_authentication(user):\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            if not user.get(\"authenticated\", False):\n                raise PermissionError(\"Acceso denegado\")\n            return func(*args, **kwargs)\n        return wrapper\n    return decorator\nuser = {\"authenticated\": True}",
+        "detail": "wdecorators.general.require_authentication",
+        "documentation": {}
+    },
+    {
+        "label": "secret_info",
+        "kind": 2,
+        "importPath": "wdecorators.general.require_authentication",
+        "description": "wdecorators.general.require_authentication",
+        "peekOfCode": "def secret_info():\n    return \"Información secreta\"\nprint(secret_info())",
+        "detail": "wdecorators.general.require_authentication",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "kind": 5,
+        "importPath": "wdecorators.general.require_authentication",
+        "description": "wdecorators.general.require_authentication",
+        "peekOfCode": "user = {\"authenticated\": True}\n@require_authentication(user)\ndef secret_info():\n    return \"Información secreta\"\nprint(secret_info())",
+        "detail": "wdecorators.general.require_authentication",
+        "documentation": {}
+    },
+    {
+        "label": "retry",
+        "kind": 2,
+        "importPath": "wdecorators.general.retry",
+        "description": "wdecorators.general.retry",
+        "peekOfCode": "def retry(times=3):\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            for _ in range(times):\n                try:\n                    return func(*args, **kwargs)\n                except Exception as e:\n                    print(f\"Fallo {func.__name__}, reintentando... Error: {e}\")\n            return None",
+        "detail": "wdecorators.general.retry",
+        "documentation": {}
+    },
+    {
+        "label": "may_fail",
+        "kind": 2,
+        "importPath": "wdecorators.general.retry",
+        "description": "wdecorators.general.retry",
+        "peekOfCode": "def may_fail():\n    import random\n    if random.random() < 0.7:\n        raise ValueError(\"Falló la ejecución\")\n    return \"Éxito\"\nprint(may_fail())",
+        "detail": "wdecorators.general.retry",
+        "documentation": {}
+    },
+    {
+        "label": "retry_on_exception",
+        "kind": 2,
+        "importPath": "wdecorators.general.retry_on_exception",
+        "description": "wdecorators.general.retry_on_exception",
+        "peekOfCode": "def retry_on_exception(retries=3, delay=2, exceptions=(Exception,)):\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            for i in range(retries):\n                try:\n                    return func(*args, **kwargs)\n                except exceptions as e:\n                    print(f\"Intento {i+1} falló: {e}. Reintentando en {delay} segundos...\")\n                    time.sleep(delay)",
+        "detail": "wdecorators.general.retry_on_exception",
+        "documentation": {}
+    },
+    {
+        "label": "risky_function",
+        "kind": 2,
+        "importPath": "wdecorators.general.retry_on_exception",
+        "description": "wdecorators.general.retry_on_exception",
+        "peekOfCode": "def risky_function(x):\n    if x == 0:\n        raise ZeroDivisionError(\"División entre cero!\")\n    return 10 / x\nrisky_function(0)",
+        "detail": "wdecorators.general.retry_on_exception",
+        "documentation": {}
+    },
+    {
+        "label": "sanitize_input",
+        "kind": 2,
+        "importPath": "wdecorators.general.sanitize_input",
+        "description": "wdecorators.general.sanitize_input",
+        "peekOfCode": "def sanitize_input(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        clean_args = [html.escape(str(arg)) for arg in args]\n        clean_kwargs = {k: html.escape(str(v)) for k, v in kwargs.items()}\n        return func(*clean_args, **clean_kwargs)\n    return wrapper\n@sanitize_input\ndef display_message(message):\n    return f\"Mensaje: {message}\"",
+        "detail": "wdecorators.general.sanitize_input",
+        "documentation": {}
+    },
+    {
+        "label": "display_message",
+        "kind": 2,
+        "importPath": "wdecorators.general.sanitize_input",
+        "description": "wdecorators.general.sanitize_input",
+        "peekOfCode": "def display_message(message):\n    return f\"Mensaje: {message}\"\nprint(display_message(\"<script>alert('Hacked!')</script>\"))",
+        "detail": "wdecorators.general.sanitize_input",
+        "documentation": {}
+    },
+    {
+        "label": "silent_fail",
+        "kind": 2,
+        "importPath": "wdecorators.general.silent_fail",
+        "description": "wdecorators.general.silent_fail",
+        "peekOfCode": "def silent_fail(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        try:\n            return func(*args, **kwargs)\n        except Exception:\n            return None\n    return wrapper\n@silent_fail\ndef risky_operation():",
+        "detail": "wdecorators.general.silent_fail",
+        "documentation": {}
+    },
+    {
+        "label": "risky_operation",
+        "kind": 2,
+        "importPath": "wdecorators.general.silent_fail",
+        "description": "wdecorators.general.silent_fail",
+        "peekOfCode": "def risky_operation():\n    return 1 / 0\n@silent_fail\ndef safe_operation():\n    return \"Todo bien\"\nprint(risky_operation())  # No lanza error, solo retorna None\nprint(safe_operation())",
+        "detail": "wdecorators.general.silent_fail",
+        "documentation": {}
+    },
+    {
+        "label": "safe_operation",
+        "kind": 2,
+        "importPath": "wdecorators.general.silent_fail",
+        "description": "wdecorators.general.silent_fail",
+        "peekOfCode": "def safe_operation():\n    return \"Todo bien\"\nprint(risky_operation())  # No lanza error, solo retorna None\nprint(safe_operation())",
+        "detail": "wdecorators.general.silent_fail",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "kind": 6,
+        "importPath": "wdecorators.general.singleton",
+        "description": "wdecorators.general.singleton",
+        "peekOfCode": "class Database:\n    def __init__(self):\n        print(\"Conectando a la base de datos...\")\ndb1 = Database()\ndb2 = Database()\nprint(db1 is db2)  # True, porque es un singleton",
+        "detail": "wdecorators.general.singleton",
+        "documentation": {}
+    },
+    {
+        "label": "singleton",
+        "kind": 2,
+        "importPath": "wdecorators.general.singleton",
+        "description": "wdecorators.general.singleton",
+        "peekOfCode": "def singleton(cls):\n    instances = {}\n    def get_instance(*args, **kwargs):\n        if cls not in instances:\n            instances[cls] = cls(*args, **kwargs)\n        return instances[cls]\n    return get_instance\n@singleton\nclass Database:\n    def __init__(self):",
+        "detail": "wdecorators.general.singleton",
+        "documentation": {}
+    },
+    {
+        "label": "db1",
+        "kind": 5,
+        "importPath": "wdecorators.general.singleton",
+        "description": "wdecorators.general.singleton",
+        "peekOfCode": "db1 = Database()\ndb2 = Database()\nprint(db1 is db2)  # True, porque es un singleton",
+        "detail": "wdecorators.general.singleton",
+        "documentation": {}
+    },
+    {
+        "label": "db2",
+        "kind": 5,
+        "importPath": "wdecorators.general.singleton",
+        "description": "wdecorators.general.singleton",
+        "peekOfCode": "db2 = Database()\nprint(db1 is db2)  # True, porque es un singleton",
+        "detail": "wdecorators.general.singleton",
+        "documentation": {}
+    },
+    {
+        "label": "time_execution",
+        "kind": 2,
+        "importPath": "wdecorators.general.time_execution",
+        "description": "wdecorators.general.time_execution",
+        "peekOfCode": "def time_execution(func):\n    def wrapper(*args, **kwargs):\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        elapsed_time = time.time() - start_time\n        print(f\"{func.__name__} tomó {elapsed_time:.6f} segundos\")\n        return result\n    return wrapper\n@time_execution\ndef slow_function():",
+        "detail": "wdecorators.general.time_execution",
+        "documentation": {}
+    },
+    {
+        "label": "slow_function",
+        "kind": 2,
+        "importPath": "wdecorators.general.time_execution",
+        "description": "wdecorators.general.time_execution",
+        "peekOfCode": "def slow_function():\n    time.sleep(1)\n    return \"Listo\"\n@time_execution\ndef fast_function():\n    return \"Rápido!\"\nprint(slow_function())\nprint(fast_function())",
+        "detail": "wdecorators.general.time_execution",
+        "documentation": {}
+    },
+    {
+        "label": "fast_function",
+        "kind": 2,
+        "importPath": "wdecorators.general.time_execution",
+        "description": "wdecorators.general.time_execution",
+        "peekOfCode": "def fast_function():\n    return \"Rápido!\"\nprint(slow_function())\nprint(fast_function())",
+        "detail": "wdecorators.general.time_execution",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "kind": 6,
+        "importPath": "wdecorators.general.timeout",
+        "description": "wdecorators.general.timeout",
+        "peekOfCode": "class TimeoutException(Exception):\n    pass\ndef timeout(seconds):\n    def decorator(func):\n        def handler(signum, frame):\n            raise TimeoutException(\"Tiempo excedido!\")\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            signal.signal(signal.SIGALRM, handler)\n            signal.alarm(seconds)",
+        "detail": "wdecorators.general.timeout",
+        "documentation": {}
+    },
+    {
+        "label": "timeout",
+        "kind": 2,
+        "importPath": "wdecorators.general.timeout",
+        "description": "wdecorators.general.timeout",
+        "peekOfCode": "def timeout(seconds):\n    def decorator(func):\n        def handler(signum, frame):\n            raise TimeoutException(\"Tiempo excedido!\")\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            signal.signal(signal.SIGALRM, handler)\n            signal.alarm(seconds)\n            try:\n                return func(*args, **kwargs)",
+        "detail": "wdecorators.general.timeout",
+        "documentation": {}
+    },
+    {
+        "label": "long_task",
+        "kind": 2,
+        "importPath": "wdecorators.general.timeout",
+        "description": "wdecorators.general.timeout",
+        "peekOfCode": "def long_task():\n    import time\n    time.sleep(3)\n    return \"Terminado\"\nprint(long_task())  # Esto lanzará TimeoutException",
+        "detail": "wdecorators.general.timeout",
+        "documentation": {}
+    },
+    {
+        "label": "to_json",
+        "kind": 2,
+        "importPath": "wdecorators.general.to_json",
+        "description": "wdecorators.general.to_json",
+        "peekOfCode": "def to_json(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        return json.dumps(func(*args, **kwargs))\n    return wrapper\n@to_json\ndef get_data():\n    return {\"name\": \"Alice\", \"age\": 25}\nprint(get_data())  # Retorna JSON",
+        "detail": "wdecorators.general.to_json",
+        "documentation": {}
+    },
+    {
+        "label": "get_data",
+        "kind": 2,
+        "importPath": "wdecorators.general.to_json",
+        "description": "wdecorators.general.to_json",
+        "peekOfCode": "def get_data():\n    return {\"name\": \"Alice\", \"age\": 25}\nprint(get_data())  # Retorna JSON",
+        "detail": "wdecorators.general.to_json",
+        "documentation": {}
+    },
+    {
+        "label": "trace_execution",
+        "kind": 2,
+        "importPath": "wdecorators.general.trace_execution",
+        "description": "wdecorators.general.trace_execution",
+        "peekOfCode": "def trace_execution(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Entrando en {func.__name__}\")\n        result = func(*args, **kwargs)\n        print(f\"Saliendo de {func.__name__}\")\n        return result\n    return wrapper\n@trace_execution\ndef multiply(a, b):",
+        "detail": "wdecorators.general.trace_execution",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "wdecorators.general.trace_execution",
+        "description": "wdecorators.general.trace_execution",
+        "peekOfCode": "def multiply(a, b):\n    return a * b\n@trace_execution\ndef greet(name):\n    return f\"Hola, {name}!\"\nprint(multiply(3, 4))\nprint(greet(\"Carlos\"))",
+        "detail": "wdecorators.general.trace_execution",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "wdecorators.general.trace_execution",
+        "description": "wdecorators.general.trace_execution",
+        "peekOfCode": "def greet(name):\n    return f\"Hola, {name}!\"\nprint(multiply(3, 4))\nprint(greet(\"Carlos\"))",
+        "detail": "wdecorators.general.trace_execution",
+        "documentation": {}
+    },
+    {
+        "label": "validate_types",
+        "kind": 2,
+        "importPath": "wdecorators.general.validate_types",
+        "description": "wdecorators.general.validate_types",
+        "peekOfCode": "def validate_types(**expected_types):\n    def decorator(func):\n        @functools.wraps(func)\n        def wrapper(*args, **kwargs):\n            for arg_name, arg_value in kwargs.items():\n                if arg_name in expected_types and not isinstance(arg_value, expected_types[arg_name]):\n                    raise TypeError(f\"Argumento {arg_name} debe ser de tipo {expected_types[arg_name]}\")\n            return func(*args, **kwargs)\n        return wrapper\n    return decorator",
+        "detail": "wdecorators.general.validate_types",
+        "documentation": {}
+    },
+    {
+        "label": "person_info",
+        "kind": 2,
+        "importPath": "wdecorators.general.validate_types",
+        "description": "wdecorators.general.validate_types",
+        "peekOfCode": "def person_info(name, age):\n    return f\"{name} tiene {age} años\"\nprint(person_info(name=\"Carlos\", age=30))\n# print(person_info(name=\"Carlos\", age=\"treinta\"))  # Esto lanzará un TypeError",
+        "detail": "wdecorators.general.validate_types",
+        "documentation": {}
+    },
+    {
+        "label": "GraylogUdpHandler",
+        "kind": 6,
+        "importPath": "wdecorators.graylog.handler",
+        "description": "wdecorators.graylog.handler",
+        "peekOfCode": "class GraylogUdpHandler:\n    __VERSION__ = \"1.1\"\n    def __init__(self, host=\"192.168.1.84\", port=12201, log_name: str = \"python\"):\n        self.address = (host, port)\n        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n        self.log_name = log_name\n        self.hostname = platform.node()\n        self.environment = os.getenv(\"APP_ENV\", \"dev\")\n        self.session_id = str(\n            uuid4()",
+        "detail": "wdecorators.graylog.handler",
+        "documentation": {}
+    },
+    {
+        "label": "init_logger",
+        "kind": 2,
+        "importPath": "wdecorators.graylog.loggerg",
+        "description": "wdecorators.graylog.loggerg",
+        "peekOfCode": "def init_logger(\n    log_name=\"python-app\",\n    graylog_host: str = None,\n    graylog_port: int = 12201,\n    log_level: str = \"INFO\",\n):\n    global logger\n    logger.remove()\n    # Graylog UDP\n    if os.getenv(\"GRAYLOG_HOST\") or graylog_host:",
+        "detail": "wdecorators.graylog.loggerg",
+        "documentation": {}
+    },
+    {
+        "label": "log_exceptions",
+        "kind": 2,
+        "importPath": "wdecorators.graylog.loggerg",
+        "description": "wdecorators.graylog.loggerg",
+        "peekOfCode": "def log_exceptions(\n    context: dict = {\"send_to_graylog\": True},\n    enable_raise: bool = False,\n):\n    def decorator(func):\n        @wraps(func)\n        def wrapper(*args, **kwargs):\n            try:\n                return func(*args, **kwargs)\n            except Exception as e:",
+        "detail": "wdecorators.graylog.loggerg",
+        "documentation": {}
+    },
+    {
+        "label": "log_execution_time",
+        "kind": 2,
+        "importPath": "wdecorators.graylog.loggerg",
+        "description": "wdecorators.graylog.loggerg",
+        "peekOfCode": "def log_execution_time(context: dict = {\"send_to_graylog\": False}):\n    def decorator(func):\n        @wraps(func)\n        def wrapper(*args, **kwargs):\n            start = time.time()\n            result = func(*args, **kwargs)\n            elapsed = time.time() - start\n            logger.bind(**context).info(f\"Executed {func.__name__} in {elapsed:.3f}s\")\n            return result\n        return wrapper",
+        "detail": "wdecorators.graylog.loggerg",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingMiddleware",
+        "kind": 6,
+        "importPath": "wdecorators.graylog.middleware",
+        "description": "wdecorators.graylog.middleware",
+        "peekOfCode": "class LoggingMiddleware(BaseHTTPMiddleware):\n    async def dispatch(self, request: Request, call_next):\n        start_time = time.time()\n        logger.bind(send_to_graylog=True).info(\n            f\"Request: {request.method} {request.url}\"\n        )\n        response = await call_next(request)\n        duration = round(time.time() - start_time, 3)\n        logger.bind(send_to_graylog=True).info(\n            f\"Response status: {response.status_code} in {duration}s\"",
+        "detail": "wdecorators.graylog.middleware",
+        "documentation": {}
+    },
+    {
+        "label": "log_calls",
+        "kind": 2,
+        "importPath": "wdecorators.log_calls.log_calls",
+        "description": "wdecorators.log_calls.log_calls",
+        "peekOfCode": "def log_calls(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Llamando a {func.__name__} con args={args}, kwargs={kwargs}\")\n        result = func(*args, **kwargs)\n        print(f\"{func.__name__} retornó {result}\")\n        return result\n    return wrapper\n@log_calls\ndef add(a, b):",
+        "detail": "wdecorators.log_calls.log_calls",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "wdecorators.log_calls.log_calls",
+        "description": "wdecorators.log_calls.log_calls",
+        "peekOfCode": "def add(a, b):\n    return a + b\n@log_calls\ndef greet(name):\n    return f\"Hola, {name}!\"\nprint(add(2, 3))\nprint(greet(\"Alice\"))",
+        "detail": "wdecorators.log_calls.log_calls",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "wdecorators.log_calls.log_calls",
+        "description": "wdecorators.log_calls.log_calls",
+        "peekOfCode": "def greet(name):\n    return f\"Hola, {name}!\"\nprint(add(2, 3))\nprint(greet(\"Alice\"))",
+        "detail": "wdecorators.log_calls.log_calls",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseHandler",
+        "kind": 6,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "class DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:\n                import psycopg2\n                self.conn = psycopg2.connect(**db_config)\n                self.use_postgres = True",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "Periodic_task_sched",
+        "kind": 6,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "class Periodic_task_sched:\n    \"\"\"Clase para manejar tareas periódicas con decoradores, API opcional y panel de control.\"\"\"\n    _api_running = False  # Evitar múltiples inicios de la API\n    def __init__(self):\n        self.database = None\n        self.executors = {}\n        self.api_enabled = False\n        self.api_app = FastAPI()\n        # Montar archivos estáticos y plantillas HTML\n        self.api_app.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "SECRET_KEY = \"mysecretkey\"\nALGORITHM = \"HS256\"\nADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_TOKEN",
+        "kind": 5,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "ADMIN_TOKEN = jwt.encode({\"role\": \"admin\"}, SECRET_KEY, algorithm=ALGORITHM)\n# Archivo de base de datos SQLite\nDB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "DB_FILE",
+        "kind": 5,
+        "importPath": "wdecorators.periodic_scheduller.controller",
+        "description": "wdecorators.periodic_scheduller.controller",
+        "peekOfCode": "DB_FILE = \"task_logs_v14.db\"\nclass DatabaseHandler:\n    \"\"\"Maneja la conexión con SQLite y PostgreSQL, usando lock para serializar operaciones.\"\"\"\n    def __init__(self, db_config=None):\n        self.use_postgres = False\n        self.lock = threading.Lock()\n        if db_config:\n            try:\n                import psycopg2\n                self.conn = psycopg2.connect(**db_config)",
+        "detail": "wdecorators.periodic_scheduller.controller",
+        "documentation": {}
+    },
+    {
+        "label": "new_task",
+        "kind": 2,
+        "importPath": "dynamic_task",
+        "description": "dynamic_task",
+        "peekOfCode": "def new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)\nprint(\"Respuesta API:\", response.json())",
+        "detail": "dynamic_task",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "dynamic_task",
+        "description": "dynamic_task",
+        "peekOfCode": "headers = {\"Authorization\": \"Bearer ADMIN_SECRET_KEY\"}\npython_task_code = \"\"\"\ndef new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True",
+        "detail": "dynamic_task",
+        "documentation": {}
+    },
+    {
+        "label": "python_task_code",
+        "kind": 5,
+        "importPath": "dynamic_task",
+        "description": "dynamic_task",
+        "peekOfCode": "python_task_code = \"\"\"\ndef new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)",
+        "detail": "dynamic_task",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "dynamic_task",
+        "description": "dynamic_task",
+        "peekOfCode": "response = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)\nprint(\"Respuesta API:\", response.json())",
+        "detail": "dynamic_task",
+        "documentation": {}
+    },
+    {
+        "label": "generate_directory_structure",
+        "kind": 2,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "def generate_directory_structure(base_dir):\n    \"\"\"Generates the directory structure in a tree-like format.\"\"\"\n    structure = []\n    for root, dirs, files in os.walk(base_dir):\n        level = root.replace(base_dir, \"\").count(os.sep)\n        indent = \"    \" * level\n        structure.append(f\"{indent}{os.path.basename(root)}/\")\n        sub_indent = \"    \" * (level + 1)\n        for file in sorted(files):\n            if file.endswith(\".py\"):",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "extract_code_snippet",
+        "kind": 2,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "def extract_code_snippet(file_path):\n    \"\"\"Extracts the full content of a Python file.\"\"\"\n    try:\n        with open(file_path, \"r\") as file:\n            content = file.read()\n            return content.strip()\n    except Exception as e:\n        return f\"# Error reading file: {e}\"\ndef generate_module_section(module_path, module_name):\n    \"\"\"Generates the section for a specific module, including its examples.\"\"\"",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "generate_module_section",
+        "kind": 2,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "def generate_module_section(module_path, module_name):\n    \"\"\"Generates the section for a specific module, including its examples.\"\"\"\n    examples = []\n    for file in sorted(os.listdir(module_path)):\n        if file.endswith(\".py\"):\n            file_path = os.path.join(module_path, file)\n            code_snippet = extract_code_snippet(file_path)\n            examples.append(\n                EXAMPLE_TEMPLATE.format(\n                    file_name=file,",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "generate_readme",
+        "kind": 2,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "def generate_readme(base_dir, readme_file):\n    \"\"\"Generates the README.md file for the examples directory.\"\"\"\n    directory_structure = generate_directory_structure(base_dir)\n    readme_content = HEADER_TEMPLATE.format(directory_structure=directory_structure)\n    # Add module-specific sections\n    for module in sorted(os.listdir(base_dir)):\n        module_path = os.path.join(base_dir, module)\n        if os.path.isdir(module_path):\n            readme_content += generate_module_section(module_path, module) + \"\\n\"\n    # Write to README.md",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "EXAMPLES_DIR",
+        "kind": 5,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "EXAMPLES_DIR = \"examples\"\nREADME_FILE = os.path.join(EXAMPLES_DIR, \"README.md\")\nHEADER_TEMPLATE = \"\"\"# Examples\nThis directory contains a collection of examples that demonstrate the usage of various modules and functionalities in this project. Each subfolder corresponds to a specific module and includes example scripts to help you understand how to use that module.\n## Directory Structure\nThe examples are organized as follows:\n```\n{directory_structure}\n```\n## How to Use",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "README_FILE",
+        "kind": 5,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "README_FILE = os.path.join(EXAMPLES_DIR, \"README.md\")\nHEADER_TEMPLATE = \"\"\"# Examples\nThis directory contains a collection of examples that demonstrate the usage of various modules and functionalities in this project. Each subfolder corresponds to a specific module and includes example scripts to help you understand how to use that module.\n## Directory Structure\nThe examples are organized as follows:\n```\n{directory_structure}\n```\n## How to Use\n1. Navigate to the module folder of interest, e.g., `examples/module1/`.",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "HEADER_TEMPLATE",
+        "kind": 5,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "HEADER_TEMPLATE = \"\"\"# Examples\nThis directory contains a collection of examples that demonstrate the usage of various modules and functionalities in this project. Each subfolder corresponds to a specific module and includes example scripts to help you understand how to use that module.\n## Directory Structure\nThe examples are organized as follows:\n```\n{directory_structure}\n```\n## How to Use\n1. Navigate to the module folder of interest, e.g., `examples/module1/`.\n2. Open the `README.md` in that folder to get detailed information about the examples.",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "MODULE_TEMPLATE",
+        "kind": 5,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "MODULE_TEMPLATE = \"\"\"\n### {module_name}\n#### Description\n{description}\n{examples}\n\"\"\"\nEXAMPLE_TEMPLATE = \"\"\"\n- **{file_name}**: {description}\n```python\n{code_snippet}",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "EXAMPLE_TEMPLATE",
+        "kind": 5,
+        "importPath": "examples_readme",
+        "description": "examples_readme",
+        "peekOfCode": "EXAMPLE_TEMPLATE = \"\"\"\n- **{file_name}**: {description}\n```python\n{code_snippet}\n  ```\n\"\"\"\ndef generate_directory_structure(base_dir):\n    \"\"\"Generates the directory structure in a tree-like format.\"\"\"\n    structure = []\n    for root, dirs, files in os.walk(base_dir):",
+        "detail": "examples_readme",
+        "documentation": {}
+    },
+    {
+        "label": "new_task",
+        "kind": 2,
+        "importPath": "logs_export",
+        "description": "logs_export",
+        "peekOfCode": "def new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)\nprint(\"Respuesta API:\", response.json())",
+        "detail": "logs_export",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "logs_export",
+        "description": "logs_export",
+        "peekOfCode": "headers = {\"Authorization\": \"Bearer ADMIN_SECRET_KEY\"}\npython_task_code = \"\"\"\ndef new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True",
+        "detail": "logs_export",
+        "documentation": {}
+    },
+    {
+        "label": "python_task_code",
+        "kind": 5,
+        "importPath": "logs_export",
+        "description": "logs_export",
+        "peekOfCode": "python_task_code = \"\"\"\ndef new_task():\n    print(\"Nueva tarea creada desde la API ejecutándose...\")\n\"\"\"\nresponse = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)",
+        "detail": "logs_export",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "logs_export",
+        "description": "logs_export",
+        "peekOfCode": "response = requests.post(\"http://localhost:8000/execute_python_task/\", json={\n    \"code\": python_task_code,\n    \"interval\": 7,\n    \"priority\": \"media\",\n    \"dynamic_interval\": True\n}, headers=headers)\nprint(\"Respuesta API:\", response.json())",
+        "detail": "logs_export",
+        "documentation": {}
+    },
+    {
+        "label": "task_primary",
+        "kind": 2,
+        "importPath": "priory_task",
+        "description": "priory_task",
+        "peekOfCode": "def task_primary():\n    print(\"Tarea principal ejecutándose...\")\n@controller.periodic_execution(interval=10, priority=\"media\", dependent_task=\"task_primary\")\ndef task_dependent():\n    print(\"Tarea dependiente ejecutándose tras la tarea principal...\")\ntask_primary()\ntask_dependent()\ncontroller.start_api()",
+        "detail": "priory_task",
+        "documentation": {}
+    },
+    {
+        "label": "task_dependent",
+        "kind": 2,
+        "importPath": "priory_task",
+        "description": "priory_task",
+        "peekOfCode": "def task_dependent():\n    print(\"Tarea dependiente ejecutándose tras la tarea principal...\")\ntask_primary()\ntask_dependent()\ncontroller.start_api()",
+        "detail": "priory_task",
+        "documentation": {}
+    },
+    {
+        "label": "controller",
+        "kind": 5,
+        "importPath": "priory_task",
+        "description": "priory_task",
+        "peekOfCode": "controller = Periodic_task_sched()\ncontroller.set_database(None)  # Usar SQLite por defecto\n@controller.periodic_execution(interval=5, priority=\"alta\", enable_api=True)\ndef task_primary():\n    print(\"Tarea principal ejecutándose...\")\n@controller.periodic_execution(interval=10, priority=\"media\", dependent_task=\"task_primary\")\ndef task_dependent():\n    print(\"Tarea dependiente ejecutándose tras la tarea principal...\")\ntask_primary()\ntask_dependent()",
+        "detail": "priory_task",
+        "documentation": {}
+    },
+    {
+        "label": "this_directory",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "this_directory = Path(__file__).parent\nlong_description = (this_directory / \"README.md\").read_text()\nsetup(\n    name=config_project[\"project\"][\"name\"],  # Nombre del paquete en PyPI\n    version=config_project[\"project\"][\"version\"],\n    packages=find_packages(),\n    install_requires=[\n        \"loguru>=0.7.0\",\n    ],\n    classifiers=[",
+        "detail": "setup",
+        "documentation": {}
+    },
+    {
+        "label": "long_description",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "long_description = (this_directory / \"README.md\").read_text()\nsetup(\n    name=config_project[\"project\"][\"name\"],  # Nombre del paquete en PyPI\n    version=config_project[\"project\"][\"version\"],\n    packages=find_packages(),\n    install_requires=[\n        \"loguru>=0.7.0\",\n    ],\n    classifiers=[\n        \"Programming Language :: Python :: 3\",",
+        "detail": "setup",
+        "documentation": {}
+    }
+]
