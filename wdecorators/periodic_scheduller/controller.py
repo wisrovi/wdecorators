@@ -8,7 +8,7 @@ import time
 from datetime import datetime
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-SECRET_KEY = "mysecretkey"
+SECRET_KEY = "mysecretkeymustbeatleast32byteslong!"
 ALGORITHM = "HS256"
 DB_FILE = "task_logs_v14.db"
 
@@ -112,15 +112,17 @@ class Periodic_task_sched:
     optional API dashboard.
 
     Usage:
-        controller = Periodic_task_sched()
-        controller.set_database()
+        .. code-block:: python
 
-        @controller.periodic_execution(interval=5)
-        def my_task():
-            print("Running...")
+            controller = Periodic_task_sched()
+            controller.set_database()
 
-        my_task()
-        controller.start_api()
+            @controller.periodic_execution(interval=5)
+            def my_task():
+                print("Running...")
+
+            my_task()
+            controller.start_api()
     """
 
     _api_running = False
