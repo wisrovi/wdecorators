@@ -1,22 +1,17 @@
+import functools
 import time
+from typing import Any, Callable
 
-def time_execution(func):
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
+
+def time_execution(func: Callable) -> Callable:
+    """Decorator that measures and prints execution time of the decorated function."""
+
+    @functools.wraps(func)
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        start = time.perf_counter()
         result = func(*args, **kwargs)
-        elapsed_time = time.time() - start_time
-        print(f"{func.__name__} tomó {elapsed_time:.6f} segundos")
+        elapsed = time.perf_counter() - start
+        print(f"{func.__name__} took {elapsed:.6f}s")
         return result
+
     return wrapper
-
-@time_execution
-def slow_function():
-    time.sleep(1)
-    return "Listo"
-
-@time_execution
-def fast_function():
-    return "Rápido!"
-
-print(slow_function())
-print(fast_function())

@@ -1,36 +1,31 @@
-import time
 import functools
 import threading
+import time
+from typing import Any, Callable, Optional
 
 
-def periodic_execution(interval):
+def periodic_execution(interval: float) -> Callable:
+    """Decorator that runs the decorated function periodically in a background thread.
+
+    Args:
+        interval: Time in seconds between each execution.
     """
-    Ejecuta la función de forma periódica cada 'interval' segundos.
-    """
 
-    def decorator(func):
+    def decorator(func: Callable) -> Callable:
         @functools.wraps(func)
-        def wrapper(*args, **kwargs):
-            def run():
-                while True:
-                    func(*args, **kwargs)
-                    time.sleep(interval)
+        def wrapper(*args: Any, **kwargs: Any) -> threading.Thread:
+            stop_event = threading.Event()
 
-            thread = threading.Thread(
-                target=run,
-                # daemon=True,
-            )
+            def run():
+                while not stop_event.is_set():
+                    func(*args, **kwargs)
+                    stop_event.wait(timeout=interval)
+
+            thread = threading.Thread(target=run, daemon=True)
             thread.start()
-            return thread  # Retorna el hilo para control externo si es necesario
+            thread.stop_event = stop_event
+            return thread
 
         return wrapper
 
     return decorator
-
-
-@periodic_execution(5)
-def say_hello():
-    print("Hola, esto se ejecuta cada 5 segundos")
-
-
-say_hello()

@@ -1,18 +1,13 @@
-def singleton(cls):
-    instances = {}
+from typing import Any, Dict
 
-    def get_instance(*args, **kwargs):
+
+def singleton(cls: type) -> type:
+    """Decorator that ensures a class has only one instance (singleton pattern)."""
+    instances: Dict[type, Any] = {}
+
+    def get_instance(*args: Any, **kwargs: Any) -> Any:
         if cls not in instances:
             instances[cls] = cls(*args, **kwargs)
         return instances[cls]
 
     return get_instance
-
-@singleton
-class Database:
-    def __init__(self):
-        print("Conectando a la base de datos...")
-
-db1 = Database()
-db2 = Database()
-print(db1 is db2)  # True, porque es un singleton

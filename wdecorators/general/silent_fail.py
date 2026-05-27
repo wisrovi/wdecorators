@@ -1,21 +1,15 @@
 import functools
+from typing import Any, Callable
 
-def silent_fail(func):
+
+def silent_fail(func: Callable) -> Callable:
+    """Decorator that silences any exception and returns None instead."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
         try:
             return func(*args, **kwargs)
         except Exception:
             return None
+
     return wrapper
-
-@silent_fail
-def risky_operation():
-    return 1 / 0
-
-@silent_fail
-def safe_operation():
-    return "Todo bien"
-
-print(risky_operation())  # No lanza error, solo retorna None
-print(safe_operation())

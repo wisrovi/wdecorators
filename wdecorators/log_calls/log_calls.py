@@ -1,26 +1,15 @@
 import functools
+from typing import Any, Callable
 
 
-def log_calls(func):
+def log_calls(func: Callable) -> Callable:
+    """Decorator that logs each call with its arguments and return value."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        print(f"Llamando a {func.__name__} con args={args}, kwargs={kwargs}")
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        print(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
         result = func(*args, **kwargs)
-        print(f"{func.__name__} retornó {result}")
+        print(f"{func.__name__} returned {result}")
         return result
 
     return wrapper
-
-
-@log_calls
-def add(a, b):
-    return a + b
-
-
-@log_calls
-def greet(name):
-    return f"Hola, {name}!"
-
-
-print(add(2, 3))
-print(greet("Alice"))

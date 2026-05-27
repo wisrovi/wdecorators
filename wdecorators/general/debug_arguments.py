@@ -1,19 +1,13 @@
 import functools
+from typing import Any, Callable
 
-def debug_arguments(func):
+
+def debug_arguments(func: Callable) -> Callable:
+    """Decorator that prints the arguments and keyword arguments passed to the function."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        print(f"Llamado a {func.__name__} con args={args}, kwargs={kwargs}")
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        print(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
         return func(*args, **kwargs)
+
     return wrapper
-
-@debug_arguments
-def add(a, b):
-    return a + b
-
-@debug_arguments
-def greet(name="Mundo"):
-    return f"Hola, {name}!"
-
-print(add(5, 10))
-print(greet(name="Carlos"))

@@ -1,21 +1,15 @@
 import functools
+from typing import Any, Callable
 
-def trace_execution(func):
+
+def trace_execution(func: Callable) -> Callable:
+    """Decorator that prints entry and exit trace messages for the function."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        print(f"Entrando en {func.__name__}")
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        print(f"Entering {func.__name__}")
         result = func(*args, **kwargs)
-        print(f"Saliendo de {func.__name__}")
+        print(f"Exiting {func.__name__}")
         return result
+
     return wrapper
-
-@trace_execution
-def multiply(a, b):
-    return a * b
-
-@trace_execution
-def greet(name):
-    return f"Hola, {name}!"
-
-print(multiply(3, 4))
-print(greet("Carlos"))

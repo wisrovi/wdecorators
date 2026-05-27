@@ -1,2 +1,5 @@
-recursive-include README.md
-recursive-include ProcessAudio README.md
+recursive-include wdecorators *.py
+recursive-include examples *.py
+include README.md
+include LICENSE
+include pyproject.toml

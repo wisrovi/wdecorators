@@ -1,20 +1,14 @@
 import functools
+from typing import Any, Callable
 
-def log_return(func):
+
+def log_return(func: Callable) -> Callable:
+    """Decorator that prints the return value of the decorated function."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
         result = func(*args, **kwargs)
-        print(f"{func.__name__} retornó {result}")
+        print(f"{func.__name__} returned {result}")
         return result
+
     return wrapper
-
-@log_return
-def square(n):
-    return n * n
-
-@log_return
-def hello():
-    return "Hola mundo"
-
-print(square(4))
-print(hello())

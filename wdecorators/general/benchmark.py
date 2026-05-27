@@ -1,24 +1,17 @@
-import time
 import functools
+import time
+from typing import Any, Callable
 
-def benchmark(func):
+
+def benchmark(func: Callable) -> Callable:
+    """Decorator that measures and prints execution time of the decorated function."""
+
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        start = time.time()
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        start = time.perf_counter()
         result = func(*args, **kwargs)
-        elapsed = time.time() - start
-        print(f"{func.__name__} tomó {elapsed:.6f} segundos")
+        elapsed = time.perf_counter() - start
+        print(f"{func.__name__} took {elapsed:.6f}s")
         return result
+
     return wrapper
-
-@benchmark
-def slow_task():
-    time.sleep(2)
-    return "Completado"
-
-@benchmark
-def quick_task():
-    return "Listo"
-
-print(slow_task())
-print(quick_task())

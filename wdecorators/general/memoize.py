@@ -1,22 +1,16 @@
 import functools
+from typing import Any, Callable
 
-def memoize(func):
-    cache = {}
+
+def memoize(func: Callable) -> Callable:
+    """Decorator that caches function results in memory keyed by arguments."""
+    cache: dict = {}
 
     @functools.wraps(func)
-    def wrapper(*args):
-        if args in cache:
-            return cache[args]
-        result = func(*args)
-        cache[args] = result
-        return result
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        key = (args, tuple(sorted(kwargs.items())))
+        if key not in cache:
+            cache[key] = func(*args, **kwargs)
+        return cache[key]
+
     return wrapper
-
-@memoize
-def slow_square(n):
-    import time
-    time.sleep(5)
-    return n * n
-
-print(slow_square(4))  # Primera vez, lento
-print(slow_square(4))  # Segunda vez, instantáneo
