@@ -1,6 +1,7 @@
 """Example: suppress decorator - suppress specific exceptions."""
 
 import asyncio
+
 from wdecorators import suppress
 
 
