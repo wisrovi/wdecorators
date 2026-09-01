@@ -3,6 +3,7 @@
 import logging
 
 import pytest
+
 from wdecorators import profile_memory
 
 
