@@ -1,3 +1,5 @@
+"""Singleton class decorator module."""
+
 from typing import Any, Dict
 
 
