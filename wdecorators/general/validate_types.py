@@ -1,3 +1,5 @@
+"""Validate types decorator module."""
+
 import functools
 from typing import Any, Callable, Dict, Type
 
