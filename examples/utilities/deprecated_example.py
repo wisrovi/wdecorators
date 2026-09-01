@@ -1,6 +1,7 @@
 """Example: deprecated decorator - warn about deprecated functions."""
 
 import warnings
+
 from wdecorators import deprecated
 
 
