@@ -1,7 +1,9 @@
 """Tests for to_json decorator."""
 
 import json
+
 import pytest
+
 from wdecorators import to_json
 
 
@@ -69,6 +71,3 @@ def test_to_json_custom_class():
 
     with pytest.raises(TypeError):
         get_custom()
-
-
-
