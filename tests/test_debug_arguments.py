@@ -4,6 +4,7 @@ import logging
 from unittest.mock import ANY
 
 import pytest
+
 from wdecorators import debug_arguments
 
 
