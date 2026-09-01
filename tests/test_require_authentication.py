@@ -1,6 +1,7 @@
 """Tests for require_authentication decorator."""
 
 import pytest
+
 from wdecorators import require_authentication
 
 
