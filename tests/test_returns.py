@@ -1,6 +1,7 @@
 """Tests for returns decorator."""
 
 import pytest
+
 from wdecorators import returns
 
 
