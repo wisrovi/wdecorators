@@ -1,7 +1,9 @@
 """Tests for context_logger decorator."""
 
 import logging
+
 import pytest
+
 from wdecorators import context_logger
 
 
