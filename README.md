@@ -2,7 +2,6 @@
 <img width="1035" height="587" alt="image" src="https://github.com/user-attachments/assets/51127189-cd78-4c57-9e9f-5257ee48f7df" />
 
 
-
 # wdecorators
 
 [![PyPI version](https://img.shields.io/pypi/v/wdecorators.svg)](https://pypi.org/project/wdecorators/)
@@ -122,10 +121,12 @@ print(db1 is db2)  # True
 
 | Class / Method | Description |
 |----------------|-------------|
-| `Periodic_task_sched()` | Creates a scheduler instance |
+| `Periodic_task_sched(auto_database, handle_signals, max_workers)` | Creates a scheduler instance with auto DB, signals, and thread pool |
 | `.set_database(db_config)` | Configures SQLite or PostgreSQL backend |
-| `.periodic_execution(interval, priority, ...)` | Decorator to register periodic tasks |
-| `.start_api()` | Launches a FastAPI dashboard (requires `[scheduler]` extras) |
+| `.periodic_execution(interval, run_at, cron, allow_concurrent, on_success, on_error)` | Decorator to register periodic tasks with cron, async, & callbacks |
+| `.start_api()` | Launches FastAPI dashboard and `/metrics` Prometheus endpoint |
+| `.stop_all()` | Stops all registered running task executors and thread pools |
+| `.run_forever(poll_interval)` | Safely blocks main thread and handles graceful shutdown on interrupt |
 | `.verify_admin(token)` | JWT-based token verification for API routes |
 
 ---
@@ -136,35 +137,34 @@ Check the [`examples/`](examples/) directory for runnable code covering every de
 
 ```bash
 # Run any example
-python examples/benchmark_example.py
-python examples/retry_example.py
-python examples/timeout_example.py
-python examples/singleton_example.py
-# ... and many more
+python examples/performance/benchmark_example.py
+python examples/resilience/retry_example.py
+python examples/periodic_task/full_featured.py
+# ... and many more organized by category
 ```
 
 ### Periodic Tasks
 
 ```python
 from wdecorators import Periodic_task_sched
-import time
+import asyncio
 
-controller = Periodic_task_sched()
-controller.set_database()
+controller = Periodic_task_sched(auto_database=True, handle_signals=True, max_workers=5)
 
-@controller.periodic_execution(interval=5, priority="high", enable_api=True)
-def critical_task():
-    print("Critical task running...")
+@controller.periodic_execution(cron="*/1 * * * *", allow_concurrent=False, enable_api=True)
+async def async_cron_task():
+    print("Async cron task running...")
+    await asyncio.sleep(1)
 
-@controller.periodic_execution(interval=10, priority="medium")
-def secondary_task():
-    print("Secondary task running...")
+@controller.periodic_execution(run_at=["04:00", "12:00", "20:00"])
+def daily_reports():
+    print("Daily report task running...")
 
-critical_task()
-secondary_task()
+async_cron_task()
+daily_reports()
 controller.start_api()
 
-time.sleep(60)
+controller.run_forever()
 ```
 
 ### Graylog Structured Logging
@@ -189,49 +189,34 @@ wdecorators/
 ├── wdecorators/
 │   ├── __init__.py           # Public API exports
 │   ├── general/              # General-purpose decorators
-│   │   ├── __init__.py
-│   │   ├── benchmark.py
-│   │   ├── count_calls.py
-│   │   ├── debug_arguments.py
-│   │   ├── disk_cache.py
-│   │   ├── log_exceptions.py
-│   │   ├── log_return.py
-│   │   ├── memoize.py
-│   │   ├── periodic_execution.py
-│   │   ├── profile_memory.py
-│   │   ├── rate_limit.py
-│   │   ├── require_authentication.py
-│   │   ├── retry.py
-│   │   ├── retry_on_exception.py
-│   │   ├── sanitize_input.py
-│   │   ├── silent_fail.py
-│   │   ├── singleton.py
-│   │   ├── time_execution.py
-│   │   ├── timeout.py
-│   │   ├── to_json.py
-│   │   ├── trace_execution.py
-│   │   └── validate_types.py
 │   ├── graylog/              # Graylog GELF logging integration
-│   │   ├── __init__.py
-│   │   ├── handler.py
-│   │   ├── loggerg.py
-│   │   └── middleware.py
 │   ├── log_calls/            # Simple call logging decorator
-│   │   └── log_calls.py
-│   └── periodic_scheduller/  # Periodic task scheduler with dashboard
+│   └── periodic_scheduller/  # Periodic task scheduler with dashboard & metrics
 │       ├── __init__.py
 │       └── controller.py
-├── examples/                 # Runnable examples for every decorator
-│   ├── benchmark_example.py
-│   ├── ...
-│   ├── graylog/
-│   │   ├── example_fastapi.py
-│   │   └── example_script.py
-│   └── periodic_task/
-│       └── basic.py
+├── examples/                 # Categorized runnable examples
+│   ├── debugging/            # Debugging and tracing examples
+│   ├── graylog/              # Graylog integration examples
+│   ├── performance/          # Benchmarking and caching examples
+│   ├── periodic_task/        # Periodic task scheduler examples (basic, advance, daily_schedule, full_featured)
+│   ├── resilience/           # Retry, timeout, rate-limiting examples
+│   ├── security/             # Input sanitization and authentication examples
+│   ├── utilities/            # Singleton, JSON, run_once examples
+│   └── validation/           # Runtime type & length validation examples
 ├── pyproject.toml
 └── README.md
 ```
+
+---
+
+## Key Technologies
+
+- **Python 3.8+**: Core runtime.
+- **FastAPI & Uvicorn**: Web dashboard and server for monitoring periodic task schedulers.
+- **PyJWT & Jinja2**: Authentication and templating for scheduler dashboard.
+- **Loguru**: Advanced logging engine with Graylog GELF support.
+- **SQLite / PostgreSQL**: Database backends for task logging and execution history.
+- **Pytest & Coverage**: Unit testing framework and test coverage reporting.
 
 ---
 
