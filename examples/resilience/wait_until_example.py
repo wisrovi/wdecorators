@@ -1,6 +1,7 @@
 """Example: wait_until decorator - wait for condition before executing."""
 
 import time
+
 from wdecorators import wait_until
 
 ready = False
