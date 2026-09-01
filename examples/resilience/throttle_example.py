@@ -1,6 +1,7 @@
 """Example: throttle decorator - throttle function calls."""
 
 import time
+
 from wdecorators import throttle
 
 call_times = []
