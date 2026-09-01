@@ -1,7 +1,9 @@
 """Tests for periodic_execution decorator."""
 
 import time
+
 import pytest
+
 from wdecorators import periodic_execution
 
 
