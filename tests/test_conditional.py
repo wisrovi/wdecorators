@@ -1,6 +1,7 @@
 """Tests for conditional decorator."""
 
 import asyncio
+
 from wdecorators import conditional
 
 
