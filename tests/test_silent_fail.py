@@ -1,6 +1,7 @@
 """Tests for silent_fail decorator."""
 
 import pytest
+
 from wdecorators import silent_fail
 
 
