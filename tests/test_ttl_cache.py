@@ -1,6 +1,7 @@
 """Tests for ttl_cache decorator."""
 
 import time
+
 from wdecorators import ttl_cache
 
 
