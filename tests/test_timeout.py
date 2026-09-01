@@ -4,8 +4,10 @@ import asyncio
 import platform
 import threading
 import time
+
 import pytest
-from wdecorators import timeout, TimeoutException
+
+from wdecorators import TimeoutException, timeout
 
 
 def test_timeout_success():
