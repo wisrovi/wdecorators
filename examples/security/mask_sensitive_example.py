@@ -1,6 +1,7 @@
 """Example: mask_sensitive decorator - mask sensitive data."""
 
 import logging
+
 from wdecorators import mask_sensitive
 
 logging.basicConfig(level=logging.DEBUG)
