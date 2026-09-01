@@ -1,6 +1,7 @@
 """Tests for benchmark decorator."""
 
 import pytest
+
 from wdecorators import benchmark
 
 
