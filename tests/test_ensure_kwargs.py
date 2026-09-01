@@ -1,6 +1,7 @@
 """Tests for ensure_kwargs decorator."""
 
 import pytest
+
 from wdecorators import ensure_kwargs
 
 
