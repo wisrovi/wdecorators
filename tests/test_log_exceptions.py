@@ -1,7 +1,9 @@
 """Tests for log_exceptions decorator."""
 
 import asyncio
+
 import pytest
+
 from wdecorators.general import log_exceptions
 
 
