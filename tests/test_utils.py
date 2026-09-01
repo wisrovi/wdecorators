@@ -39,7 +39,7 @@ def test_make_async_wrapper():
 
 def test_update_wrapper_with_logging():
     def wrapped():
-        """docstring"""
+        """Docstring."""
         return "original"
 
     def wrapper():
