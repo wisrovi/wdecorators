@@ -107,4 +107,7 @@ __all__ = [
     "logger",
     "LoggingMiddleware",
     "Periodic_task_sched",
+    "__version__",
 ]
+
+__version__ = "1.1.0"
