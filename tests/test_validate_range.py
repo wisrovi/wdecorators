@@ -1,6 +1,7 @@
 """Tests for validate_range decorator."""
 
 import pytest
+
 from wdecorators import validate_range
 
 
