@@ -1,6 +1,7 @@
 """Tests for deprecated decorator."""
 
 import warnings
+
 from wdecorators import deprecated
 
 
