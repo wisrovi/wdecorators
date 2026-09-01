@@ -3,6 +3,7 @@
 import asyncio
 
 import pytest
+
 from wdecorators import wait_until
 
 
@@ -27,6 +28,7 @@ def test_wait_until_predicate_becomes_true():
         flag[0] = True
 
     import threading
+
     threading.Timer(0.05, resolve).start()
     result = my_func()
     assert result == 99
