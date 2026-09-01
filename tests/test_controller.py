@@ -4,10 +4,11 @@ import json
 import sqlite3
 import threading
 from datetime import datetime
-from unittest.mock import MagicMock, PropertyMock, patch, call, ANY
+from unittest.mock import ANY, MagicMock, PropertyMock, call, patch
 
 import pytest
 
+from wdecorators.periodic_scheduller.controller import SECRET_KEY
 
 # ── Helpers ────────────────────────────────────────────────────────────
 
@@ -140,15 +141,11 @@ class TestDatabaseHandler:
         assert rows[0][3] == "hello"
 
         # fetch_all with params
-        rows2 = db.fetch_all(
-            "SELECT * FROM logs WHERE task_name = ?", ("task_a",)
-        )
+        rows2 = db.fetch_all("SELECT * FROM logs WHERE task_name = ?", ("task_a",))
         assert len(rows2) == 1
 
         # fetch_all with no results
-        rows3 = db.fetch_all(
-            "SELECT * FROM logs WHERE task_name = ?", ("nonexistent",)
-        )
+        rows3 = db.fetch_all("SELECT * FROM logs WHERE task_name = ?", ("nonexistent",))
         assert rows3 == []
 
         # multiple rows
@@ -382,7 +379,11 @@ class TestNetworkingAndApi:
         args, kwargs = mock_thread.call_args
         assert kwargs["target"] is not None
         assert kwargs["args"] == (ctrl.api_app,)
-        assert kwargs["kwargs"] == {"host": "0.0.0.0", "port": 8000, "log_level": "info"}
+        assert kwargs["kwargs"] == {
+            "host": "0.0.0.0",
+            "port": 8000,
+            "log_level": "info",
+        }
         assert kwargs["daemon"] is True
         # The mock thread's start() should have been called
         mock_thread.return_value.start.assert_called_once()
@@ -405,6 +406,7 @@ class TestNetworkingAndApi:
 
     def test_verify_admin_valid(self, ctrl):
         import jwt
+
         token = jwt.encode({"role": "admin"}, SECRET_KEY, algorithm="HS256")
         token = jwt.encode({"role": "supervisor"}, SECRET_KEY, algorithm="HS256")
         token = jwt.encode({"role": "user"}, SECRET_KEY, algorithm="HS256")
@@ -483,9 +485,7 @@ class TestFastApiEndpoints:
 
     def test_login_supervisor(self, ctrl):
         client = self._make_client(ctrl)
-        resp = client.post(
-            "/login", data={"username": "user", "password": "pass"}
-        )
+        resp = client.post("/login", data={"username": "user", "password": "pass"})
         assert resp.status_code == 200
         data = resp.json()
         import jwt
@@ -525,7 +525,9 @@ class TestFastApiEndpoints:
         client = self._make_client(ctrl)
 
         # pause
-        resp = client.post("/pause_task/", data={"task_name": "my_task", "token": token})
+        resp = client.post(
+            "/pause_task/", data={"task_name": "my_task", "token": token}
+        )
         assert resp.status_code == 200
         assert resp.json() == {"status": "Task 'my_task' paused."}
         assert ctrl.executors["my_task"].paused is True
@@ -562,9 +564,7 @@ class TestFastApiEndpoints:
         token = jwt.encode({"role": "admin"}, SECRET_KEY, algorithm="HS256")
         client = self._make_client(ctrl)
 
-        resp = client.post(
-            "/pause_task/", data={"task_name": "nope", "token": token}
-        )
+        resp = client.post("/pause_task/", data={"task_name": "nope", "token": token})
         assert resp.status_code == 200
         assert resp.json() == {"error": "Task 'nope' not found."}
 
@@ -575,9 +575,7 @@ class TestFastApiEndpoints:
         token = jwt.encode({"role": "admin"}, SECRET_KEY, algorithm="HS256")
         client = self._make_client(ctrl)
 
-        resp = client.post(
-            "/stop_task/", data={"task_name": "nope", "token": token}
-        )
+        resp = client.post("/stop_task/", data={"task_name": "nope", "token": token})
         assert resp.status_code == 200
         assert resp.json() == {"error": "Task 'nope' not found."}
 
@@ -588,9 +586,7 @@ class TestFastApiEndpoints:
         token = jwt.encode({"role": "admin"}, SECRET_KEY, algorithm="HS256")
         client = self._make_client(ctrl)
 
-        resp = client.post(
-            "/resume_task/", data={"task_name": "nope", "token": token}
-        )
+        resp = client.post("/resume_task/", data={"task_name": "nope", "token": token})
         assert resp.status_code == 200
         assert resp.json() == {"error": "Task 'nope' not found."}
 
@@ -609,12 +605,7 @@ def task_function():
 """
         resp = client.post(
             "/execute_python_task/",
-            data={
-                "task_code": code,
-                "interval": 3,
-                "priority": "low",
-                "token": token,
-            },
+            data={"task_code": code, "interval": 3, "priority": "low", "token": token},
         )
         assert resp.status_code == 200
         assert resp.json() == {"status": "New task created and running."}
@@ -1037,7 +1028,9 @@ class TestPeriodicExecutorRun:
             if executor.execution_count >= 1:
                 executor.stop()
 
-        with patch("wdecorators.periodic_scheduller.controller.time.sleep", stop_after_one):
+        with patch(
+            "wdecorators.periodic_scheduller.controller.time.sleep", stop_after_one
+        ):
             executor._run()
 
         assert len(calls) == 1
@@ -1063,3 +1056,152 @@ class TestPeriodicExecutorRun:
             executor._run()
 
         assert len(calls) == 2
+
+
+class TestAdvancedControllerFeatures:
+    """Tests for auto_database, handle_signals, stop_all, and run_forever methods."""
+
+    def test_auto_database_init(self, tmp_path, monkeypatch):
+        """Verify auto_database=True initializes database handler on creation."""
+        from wdecorators.periodic_scheduller.controller import (
+            DB_FILE,
+            Periodic_task_sched,
+        )
+
+        _patch_db_file(tmp_path, monkeypatch)
+
+        sched = Periodic_task_sched(auto_database=True)
+        assert sched.database is not None
+
+    def test_handle_signals_init(self):
+        """Verify handle_signals=True calls signal registration."""
+        from wdecorators.periodic_scheduller.controller import Periodic_task_sched
+
+        with patch("signal.signal") as mock_signal:
+            sched = Periodic_task_sched(handle_signals=True)
+            assert mock_signal.called
+
+    def test_stop_all(self, ctrl):
+        """Verify stop_all stops all registered task executors."""
+        ex1 = MagicMock()
+        ex2 = MagicMock()
+        ctrl.executors = {"task1": ex1, "task2": ex2}
+
+        ctrl.stop_all()
+
+        ex1.stop.assert_called_once()
+        ex2.stop.assert_called_once()
+
+    def test_run_forever_keyboard_interrupt(self, ctrl):
+        """Verify run_forever catches KeyboardInterrupt and stops all tasks."""
+        with patch.object(ctrl, "stop_all") as mock_stop_all, patch(
+            "wdecorators.periodic_scheduller.controller.time.sleep",
+            side_effect=KeyboardInterrupt,
+        ):
+            ctrl.run_forever(poll_interval=0.1)
+            mock_stop_all.assert_called_once()
+
+    def test_run_at_validation(self, ctrl):
+        """Verify raising ValueError if neither interval nor run_at is specified."""
+        with pytest.raises(
+            ValueError, match="Either 'interval', 'run_at', or 'cron' must be provided"
+        ):
+
+            @ctrl.periodic_execution()
+            def invalid_task():
+                pass
+
+    def test_run_at_seconds_calculation(self, ctrl):
+        """Verify calculation of seconds to next run_at execution time."""
+
+        @ctrl.periodic_execution(run_at=["04:00", "10:00", "16:00", "23:59"])
+        def daily_task():
+            pass
+
+        executor = ctrl.executors["daily_task"]
+        assert executor.run_at == ["04:00", "10:00", "16:00", "23:59"]
+        secs = executor._get_seconds_to_next_run_at()
+        assert isinstance(secs, float)
+        assert secs > 0
+
+    def test_cron_scheduling(self, ctrl):
+        """Verify 5-field cron parsing and next run calculation."""
+        from wdecorators.periodic_scheduller.controller import _get_seconds_to_next_cron
+
+        @ctrl.periodic_execution(cron="*/5 * * * *")
+        def cron_task():
+            pass
+
+        executor = ctrl.executors["cron_task"]
+        assert executor.cron == "*/5 * * * *"
+        secs = _get_seconds_to_next_cron("*/5 * * * *")
+        assert isinstance(secs, float)
+        assert secs > 0
+
+    def test_callbacks_and_async_task(self, ctrl):
+        """Verify on_success, on_error, and async function support."""
+        success_results = []
+        error_results = []
+
+        def on_success(res):
+            success_results.append(res)
+
+        def on_error(err):
+            error_results.append(err)
+
+        @ctrl.periodic_execution(
+            interval=1, max_executions=1, on_success=on_success, on_error=on_error
+        )
+        async def async_success_task():
+            return "async_ok"
+
+        executor = ctrl.executors["async_success_task"]
+        executor.running = True
+        with patch("wdecorators.periodic_scheduller.controller.time.sleep"):
+            executor._run()
+
+        assert success_results == ["async_ok"]
+
+    def test_allow_concurrent_false(self, ctrl):
+        """Verify overlap prevention when allow_concurrent=False."""
+
+        @ctrl.periodic_execution(interval=1, max_executions=1, allow_concurrent=False)
+        def busy_task():
+            pass
+
+        executor = ctrl.executors["busy_task"]
+        executor.is_executing = True
+        executor.running = True
+
+        def stop_run(secs):
+            executor.stop()
+
+        with patch("wdecorators.periodic_scheduller.controller.time.sleep", stop_run):
+            executor._run()
+
+        assert executor.execution_count == 0
+
+    def test_max_workers_init(self):
+        """Verify max_workers initializes ThreadPoolExecutor."""
+        from wdecorators.periodic_scheduller.controller import Periodic_task_sched
+
+        sched = Periodic_task_sched(max_workers=4)
+        assert sched.thread_pool is not None
+        sched.stop_all()
+
+    def test_metrics_endpoint(self, ctrl):
+        """Verify Prometheus /metrics endpoint format."""
+        from starlette.testclient import TestClient
+
+        ctrl.api_enabled = True
+
+        @ctrl.periodic_execution(interval=5)
+        def sample_task():
+            pass
+
+        ctrl._build_api_app()
+        client = TestClient(ctrl.api_app)
+        resp = client.get("/metrics")
+        assert resp.status_code == 200
+        assert "scheduler_tasks_total" in resp.text
+        assert "sample_task" in resp.text
