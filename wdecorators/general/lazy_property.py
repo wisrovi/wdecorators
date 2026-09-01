@@ -18,10 +18,16 @@ class lazy_property:
     """
 
     def __init__(self, func):
+        """Initialize lazy_property.
+
+        Args:
+            func: Function to wrap as a lazy property.
+        """
         self.func = func
         self.attr_name = func.__name__
 
     def __get__(self, instance, owner):
+        """Get property value from instance or compute lazily."""
         if instance is None:
             return self
         value = self.func(instance)
