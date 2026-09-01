@@ -1,6 +1,7 @@
 """Tests for coerce_types decorator."""
 
 import pytest
+
 from wdecorators import coerce_types
 
 
