@@ -4,6 +4,7 @@ import json
 import os
 import pickle
 import tempfile
+
 from wdecorators import disk_cache
 
 
@@ -64,9 +65,11 @@ def test_disk_cache_hit_miss():
 
 def test_disk_cache_invalid_serializer():
     try:
+
         @disk_cache(filename="test.pkl", serializer="invalid")
         def compute(n):
             return n
+
     except ValueError as e:
         assert "Unsupported serializer" in str(e)
 
