@@ -1,3 +1,8 @@
+
+<img width="1035" height="587" alt="image" src="https://github.com/user-attachments/assets/51127189-cd78-4c57-9e9f-5257ee48f7df" />
+
+
+
 # wdecorators
 
 [![PyPI version](https://img.shields.io/pypi/v/wdecorators.svg)](https://pypi.org/project/wdecorators/)
