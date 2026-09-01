@@ -1,6 +1,7 @@
 """Tests for validate_types decorator."""
 
 import pytest
+
 from wdecorators import validate_types
 
 
