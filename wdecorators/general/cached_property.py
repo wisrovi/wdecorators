@@ -22,10 +22,16 @@ class cached_property:
     """
 
     def __init__(self, func):
+        """Initialize cached_property.
+
+        Args:
+            func: Function to wrap as a cached property.
+        """
         self.func = func
         self.attr_name = func.__name__
 
     def __get__(self, instance, owner):
+        """Get property value from instance or compute and cache it."""
         if instance is None:
             return self
         try:
@@ -36,6 +42,7 @@ class cached_property:
             return value
 
     def __delete__(self, instance):
+        """Invalidate and delete cached property from instance."""
         try:
             del instance.__dict__[self.attr_name]
         except KeyError:
