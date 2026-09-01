@@ -1,6 +1,7 @@
 """Pytest configuration and shared fixtures."""
 
 import logging
+
 import pytest
 
 
