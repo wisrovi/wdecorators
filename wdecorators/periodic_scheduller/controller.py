@@ -165,8 +165,7 @@ class DatabaseHandler:
 
 
 class Periodic_task_sched:
-    """Periodic task scheduler with decorator-based registration and
-    optional API dashboard.
+    """Periodic task scheduler with decorator-based registration and optional API.
 
     Usage:
         .. code-block:: python
