@@ -1,3 +1,5 @@
+"""To JSON decorator module."""
+
 import functools
 import json
 from typing import Any, Callable
