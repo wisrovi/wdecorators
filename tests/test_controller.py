@@ -363,14 +363,12 @@ class TestNetworkingAndApi:
 
     def test_start_api_success(self, ctrl, capsys):
         ctrl.api_enabled = True
-        with (
-            patch.object(ctrl, "is_port_in_use", return_value=False),
-            patch.object(ctrl, "_build_api_app") as mock_build,
-            patch(
-                "wdecorators.periodic_scheduller.controller.threading.Thread"
-            ) as mock_thread,
-        ):
-            ctrl.start_api()
+        with patch.object(ctrl, "is_port_in_use", return_value=False):
+            with patch.object(ctrl, "_build_api_app") as mock_build:
+                with patch(
+                    "wdecorators.periodic_scheduller.controller.threading.Thread"
+                ) as mock_thread:
+                    ctrl.start_api()
 
         out, _ = capsys.readouterr()
         assert "Starting API" in out
@@ -391,15 +389,15 @@ class TestNetworkingAndApi:
     def test_start_api_twice(self, ctrl, capsys):
         """Second call should be a no-op because _api_running is True."""
         ctrl.api_enabled = True
-        with (
-            patch.object(ctrl, "is_port_in_use", return_value=False),
-            patch.object(ctrl, "_build_api_app"),
-            patch("uvicorn.run"),
-            patch("wdecorators.periodic_scheduller.controller.threading.Thread"),
-        ):
-            ctrl.start_api()
-            capsys.readouterr()  # discard first output
-            ctrl.start_api()
+        with patch.object(ctrl, "is_port_in_use", return_value=False):
+            with patch.object(ctrl, "_build_api_app"):
+                with patch("uvicorn.run"):
+                    with patch(
+                        "wdecorators.periodic_scheduller.controller.threading.Thread"
+                    ):
+                        ctrl.start_api()
+                        capsys.readouterr()  # discard first output
+                        ctrl.start_api()
 
         out, _ = capsys.readouterr()
         assert out == ""
