@@ -1,7 +1,9 @@
 """Tests for retry decorator."""
 
 import asyncio
+
 import pytest
+
 from wdecorators import retry
 
 
