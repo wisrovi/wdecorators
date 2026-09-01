@@ -1,4 +1,5 @@
 """Tests for graylog logger init, log_exceptions, and log_execution_time."""
+
 import os
 from unittest.mock import patch
 
@@ -15,10 +16,14 @@ class TestInitLogger:
     @patch("wdecorators.graylog.loggerg.logger.add")
     @patch("wdecorators.graylog.loggerg.logger.remove")
     def test_init_with_env_host(self, mock_remove, mock_add):
-        with patch.dict(os.environ, {"GRAYLOG_HOST": "graylog.example.com"}, clear=True):
+        with patch.dict(
+            os.environ, {"GRAYLOG_HOST": "graylog.example.com"}, clear=True
+        ):
             result = init_logger(log_name="myapp")
             assert result is logger
-            graylog_add = [c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)]
+            graylog_add = [
+                c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)
+            ]
             assert len(graylog_add) == 1
             handler = graylog_add[0][0][0]
             assert handler.address == ("graylog.example.com", 12201)
@@ -29,7 +34,9 @@ class TestInitLogger:
         with patch.dict(os.environ, {}, clear=True):
             result = init_logger(graylog_host="10.0.0.50", log_name="myapp")
             assert result is logger
-            graylog_add = [c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)]
+            graylog_add = [
+                c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)
+            ]
             assert len(graylog_add) == 1
             handler = graylog_add[0][0][0]
             assert handler.address == ("127.0.0.1", 12201)
@@ -39,22 +46,30 @@ class TestInitLogger:
     def test_init_no_host_skips_graylog(self, mock_remove, mock_add):
         with patch.dict(os.environ, {}, clear=True):
             init_logger()
-            graylog_add = [c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)]
+            graylog_add = [
+                c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)
+            ]
             assert len(graylog_add) == 0
 
     @patch("wdecorators.graylog.loggerg.logger.add")
     @patch("wdecorators.graylog.loggerg.logger.remove")
     def test_init_with_env_port(self, mock_remove, mock_add):
-        with patch.dict(os.environ, {"GRAYLOG_HOST": "host", "GRAYLOG_PORT": "12345"}, clear=True):
+        with patch.dict(
+            os.environ, {"GRAYLOG_HOST": "host", "GRAYLOG_PORT": "12345"}, clear=True
+        ):
             init_logger()
-            graylog_add = [c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)]
+            graylog_add = [
+                c for c in mock_add.call_args_list if "GraylogUdpHandler" in str(c)
+            ]
             handler = graylog_add[0][0][0]
             assert handler.address == ("host", 12345)
 
     @patch("wdecorators.graylog.loggerg.logger.add")
     @patch("wdecorators.graylog.loggerg.logger.remove")
     def test_init_dev_env_adds_file_sink(self, mock_remove, mock_add):
-        with patch.dict(os.environ, {"GRAYLOG_HOST": "host", "APP_ENV": "dev"}, clear=True):
+        with patch.dict(
+            os.environ, {"GRAYLOG_HOST": "host", "APP_ENV": "dev"}, clear=True
+        ):
             init_logger()
             file_add = [c for c in mock_add.call_args_list if "logs/dev.log" in str(c)]
             assert len(file_add) == 1
@@ -62,7 +77,9 @@ class TestInitLogger:
     @patch("wdecorators.graylog.loggerg.logger.add")
     @patch("wdecorators.graylog.loggerg.logger.remove")
     def test_init_non_dev_skips_file_sink(self, mock_remove, mock_add):
-        with patch.dict(os.environ, {"GRAYLOG_HOST": "host", "APP_ENV": "production"}, clear=True):
+        with patch.dict(
+            os.environ, {"GRAYLOG_HOST": "host", "APP_ENV": "production"}, clear=True
+        ):
             init_logger()
             file_add = [c for c in mock_add.call_args_list if "logs/dev.log" in str(c)]
             assert len(file_add) == 0
@@ -99,7 +116,9 @@ class TestLogExceptions:
         assert ok() == 42
 
     def test_exception_logs_without_raise_custom_context(self):
-        @log_exceptions(context={"send_to_graylog": True, "user_id": "test"}, enable_raise=False)
+        @log_exceptions(
+            context={"send_to_graylog": True, "user_id": "test"}, enable_raise=False
+        )
         def crash():
             raise RuntimeError("fail")
 
