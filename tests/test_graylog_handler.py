@@ -1,4 +1,5 @@
 """Tests for GraylogUdpHandler."""
+
 import json
 import platform
 from types import SimpleNamespace
