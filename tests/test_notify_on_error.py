@@ -1,6 +1,7 @@
 """Tests for notify_on_error decorator."""
 
 import pytest
+
 from wdecorators import notify_on_error
 
 
