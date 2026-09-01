@@ -1,3 +1,5 @@
+"""Log calls decorator module."""
+
 import functools
 from typing import Any, Callable
 
