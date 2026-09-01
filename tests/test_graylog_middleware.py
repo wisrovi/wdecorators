@@ -1,4 +1,5 @@
 """Tests for LoggingMiddleware."""
+
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
@@ -100,6 +101,7 @@ def test_dispatch_with_error_response():
     @app.get("/error")
     async def error():
         from fastapi.responses import JSONResponse
+
         return JSONResponse(status_code=500, content={"error": "server error"})
 
     with patch("wdecorators.graylog.middleware.logger") as mock_logger:
