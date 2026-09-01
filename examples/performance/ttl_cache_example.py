@@ -1,6 +1,7 @@
 """Example: ttl_cache decorator - time-to-live cache."""
 
 import time
+
 from wdecorators import ttl_cache
 
 
