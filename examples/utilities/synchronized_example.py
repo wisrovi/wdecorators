@@ -1,6 +1,7 @@
 """Example: synchronized decorator - thread-safe execution."""
 
 import threading
+
 from wdecorators import synchronized
 
 counter = 0
@@ -12,6 +13,7 @@ def increment():
     current = counter
     # Simulate a race condition without the lock
     import time
+
     time.sleep(0.01)
     counter = current + 1
 
