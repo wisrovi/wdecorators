@@ -1,8 +1,8 @@
 """Example: debounce decorator - debounce function calls."""
 
 import time
-from wdecorators import debounce
 
+from wdecorators import debounce
 
 call_log = []
 
