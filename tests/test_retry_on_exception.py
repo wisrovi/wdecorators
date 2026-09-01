@@ -1,6 +1,7 @@
 """Tests for retry_on_exception decorator."""
 
 import pytest
+
 from wdecorators import retry_on_exception
 
 
