@@ -1,3 +1,5 @@
+"""Setup script for wdecorators."""
+
 try:
     import tomllib  # Python 3.11+
 except ModuleNotFoundError:
