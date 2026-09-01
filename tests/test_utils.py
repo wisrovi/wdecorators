@@ -1,11 +1,12 @@
 """Tests for _utils helper functions."""
 
 import asyncio
+
 from wdecorators.general._utils import (
+    decorator_with_optional_args,
     is_async,
     make_async_wrapper,
     update_wrapper_with_logging,
-    decorator_with_optional_args,
 )
 
 
@@ -54,6 +55,7 @@ def test_decorator_with_optional_args_with_func():
     def my_decorator(func):
         def inner():
             return "decorated"
+
         return inner
 
     def my_func():
@@ -66,8 +68,10 @@ def test_decorator_with_optional_args_with_func():
 def test_decorator_with_optional_args_without_func():
     def my_decorator(func=None):
         if func is not None:
+
             def inner():
                 return "decorated"
+
             return inner
         return my_decorator
 
