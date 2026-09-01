@@ -1,6 +1,7 @@
 """Tests for accepts decorator."""
 
 import pytest
+
 from wdecorators import accepts
 
 
