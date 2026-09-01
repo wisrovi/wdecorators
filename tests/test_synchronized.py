@@ -2,7 +2,9 @@
 
 import asyncio
 import threading
+
 import pytest
+
 from wdecorators import synchronized
 
 
@@ -13,6 +15,7 @@ def test_synchronized_thread_safety():
     def increment():
         current = counter[0]
         import time
+
         time.sleep(0.005)
         counter[0] = current + 1
 
