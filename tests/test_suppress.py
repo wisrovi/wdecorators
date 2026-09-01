@@ -1,6 +1,7 @@
 """Tests for suppress decorator."""
 
 import pytest
+
 from wdecorators import suppress
 
 
