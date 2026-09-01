@@ -1,6 +1,7 @@
 """Tests for run_once decorator."""
 
 import asyncio
+
 from wdecorators import run_once
 
 
